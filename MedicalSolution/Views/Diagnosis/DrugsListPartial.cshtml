@@ -1,0 +1,19 @@
+﻿@model MedicalSolution.Models.DiagnosisDrugsViewModel
+<table id="diagnosisDrugsTable">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.DrugsList)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button id="openNewDrugBtn" data-id="@Model.Id">Add new drug</button>

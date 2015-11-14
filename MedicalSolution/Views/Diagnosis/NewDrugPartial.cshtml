@@ -1,0 +1,9 @@
+﻿@model MedicalSolution.Models.DrugNewViewModel
+@using (Ajax.BeginForm("NewDrug", new AjaxOptions { HttpMethod = "post", UpdateTargetId = "diagnosisDrugsTable", OnSuccess = "applyDrugFunc" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.DiagnosisId)
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+    <input type="submit" value="add" />
+}

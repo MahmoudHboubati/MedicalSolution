@@ -1,0 +1,22 @@
+﻿@model MedicalSolution.Models.DiagnosisViewModel
+<table id="diagnosisTable">
+    <thead>
+        <tr>
+            <th>Options</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Discription</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.DiagnosisList)
+        {
+            <tr>
+                <td><a data-id="@item.Id">Drugs</a></td>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>

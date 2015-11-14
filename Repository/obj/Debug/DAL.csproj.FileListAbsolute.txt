@@ -1,0 +1,11 @@
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\Repository.dll
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\Repository.pdb
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\Core.dll
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\DAL.dll
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\EntityFramework.dll
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\Core.pdb
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\DAL.pdb
+D:\MHM\Visual Stideo\MedicalSolution\Repository\bin\Debug\EntityFramework.xml
+D:\MHM\Visual Stideo\MedicalSolution\Repository\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\MHM\Visual Stideo\MedicalSolution\Repository\obj\Debug\Repository.dll
+D:\MHM\Visual Stideo\MedicalSolution\Repository\obj\Debug\Repository.pdb

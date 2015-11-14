@@ -1,0 +1,12 @@
+﻿@model MedicalSolution.Models.DiagnosisNewViewModel
+@using (Ajax.BeginForm("New", new AjaxOptions { HttpMethod = "post", UpdateTargetId = "diagnosisList", OnSuccess = "applyDiagnosisFunc" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.LabelFor(m => m.Description)
+    @Html.TextBoxFor(m => m.Description)
+    <br />
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+    <br />
+    <input type="submit" value="add" />    
+}

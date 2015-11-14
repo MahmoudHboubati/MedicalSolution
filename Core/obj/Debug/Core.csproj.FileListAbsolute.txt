@@ -1,0 +1,4 @@
+D:\MHM\Visual Stideo\MedicalSolution\Core\bin\Debug\Core.dll
+D:\MHM\Visual Stideo\MedicalSolution\Core\bin\Debug\Core.pdb
+D:\MHM\Visual Stideo\MedicalSolution\Core\obj\Debug\Core.dll
+D:\MHM\Visual Stideo\MedicalSolution\Core\obj\Debug\Core.pdb

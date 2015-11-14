@@ -1,0 +1,10 @@
+D:\MHM\Visual Stideo\MedicalSolution\DAL\bin\Debug\DAL.dll.config
+D:\MHM\Visual Stideo\MedicalSolution\DAL\bin\Debug\DAL.dll
+D:\MHM\Visual Stideo\MedicalSolution\DAL\bin\Debug\DAL.pdb
+D:\MHM\Visual Stideo\MedicalSolution\DAL\bin\Debug\EntityFramework.dll
+D:\MHM\Visual Stideo\MedicalSolution\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\MHM\Visual Stideo\MedicalSolution\DAL\bin\Debug\EntityFramework.xml
+D:\MHM\Visual Stideo\MedicalSolution\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\MHM\Visual Stideo\MedicalSolution\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\MHM\Visual Stideo\MedicalSolution\DAL\obj\Debug\DAL.dll
+D:\MHM\Visual Stideo\MedicalSolution\DAL\obj\Debug\DAL.pdb

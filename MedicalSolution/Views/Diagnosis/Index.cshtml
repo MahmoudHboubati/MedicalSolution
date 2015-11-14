@@ -1,0 +1,77 @@
+﻿@model MedicalSolution.Models.DiagnosisViewModel
+<div id="diagnosisList">
+    @Html.Partial("DiagnosisListPartial")
+</div>
+<div style="display: none" id="newDiagnosis"></div>
+<button id="openNewBtn">Add new diagnosis</button>
+<div style="display: none" id="diagnosisDrugsTable"></div>
+<div style="display: none" id="newDiagnosisDrug"></div>
+@section scripts{
+    <script>
+
+        function applyDiagnosisFunc() {
+
+            $('#diagnosisTable a').on('click', function () {//alert('hi')
+                $.ajax({
+                    url: '@Url.Action("DrugsListPartial")',
+                    data: { id: $(this).data('id') },
+                    beforeSend: function () {
+                        $('#diagnosisDrugsTable').hide('fast');
+                    },
+                    success: function (res) {
+                        if (res) {
+                            $('#diagnosisDrugsTable').html(res).show('slow')
+                            applyFunc();
+                        }
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                })
+            });
+        }
+
+        function applyFunc() {
+
+            $('#openNewDrugBtn').on('click', function () {
+                $.ajax({
+                    url: '@Url.Action("NewDrugPartial", new { id = "_id_" })'.replace("_id_", $('#openNewDrugBtn').data("id")),
+                    success: function (res) {
+                        if (res) {
+                            $('#newDiagnosisDrug').html(res).show('slow')
+                        }
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                })
+            });
+        }
+
+        function applyDrugFunc() {
+        }
+
+        $(document).ready(function () {
+
+
+            applyDiagnosisFunc();
+
+            applyFunc();
+
+
+            $('#openNewBtn').on('click', function () {
+                $.ajax({
+                    url: '@Url.Action("NewPartial")',
+                    success: function (res) {
+                        if (res) {
+                            $('#newDiagnosis').html(res).show('slow')
+                        }
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                })
+            })
+        });
+    </script>
+}
